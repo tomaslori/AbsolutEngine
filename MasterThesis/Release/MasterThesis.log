@@ -1,0 +1,33 @@
+﻿  Main.cpp
+c:\users\tomas\documents\visual studio 2015\projects\masterthesis\masterthesis\src\Shader.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+src\Main.cpp(191): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(283): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(284): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(288): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(289): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(291): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(292): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+src\Main.cpp(300): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+SOIL.lib(SOIL.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  0 of 257 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    38 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+Shader.obj : warning LNK4049: locally defined symbol ___glewLinkProgram imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewDeleteShader imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewGetProgramInfoLog imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewShaderSource imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewAttachShader imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewGetProgramiv imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewGetShaderInfoLog imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewCreateProgram imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewCreateShader imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewCompileShader imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewGetShaderiv imported
+Shader.obj : warning LNK4049: locally defined symbol ___glewUseProgram imported
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Tomas\Documents\Visual Studio 2015\Projects\MasterThesis\Release\vc120.pdb'; linking object as if no debug info
+  MasterThesis.vcxproj -> C:\Users\Tomas\Documents\Visual Studio 2015\Projects\MasterThesis\Release\MasterThesis.exe
+  MasterThesis.vcxproj -> C:\Users\Tomas\Documents\Visual Studio 2015\Projects\MasterThesis\Release\MasterThesis.pdb (Full PDB)
