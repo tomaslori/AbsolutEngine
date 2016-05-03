@@ -14,7 +14,9 @@ namespace AbsolutEngine {
 		friend class GameObject;
 
 	public:
-		Handle(const Handle &handle);
+		//Handle(const Handle &handle);
+		//Handle& operator=(const Handle &handle);
+		//Handle& operator=(Handle &&handle);
 		Handle(uint16_t index, uint16_t version, HandleManager* handleManager);
 		~Handle();
 

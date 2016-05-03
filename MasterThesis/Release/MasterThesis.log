@@ -1,28 +1,5 @@
-﻿  Component.cpp
-  GameObject.cpp
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\utility(144): error C2280: 'std::unique_ptr<AbsolutEngine::Handle,std::default_delete<_Ty>>::unique_ptr(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': attempting to reference a deleted function
-          with
-          [
-              _Ty=AbsolutEngine::Handle
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\memory(1435): note: see declaration of 'std::unique_ptr<AbsolutEngine::Handle,std::default_delete<_Ty>>::unique_ptr'
-          with
-          [
-              _Ty=AbsolutEngine::Handle
-          ]
-  src\core\engine\GameObject.cpp(14): note: see reference to function template instantiation 'std::pair<const _Kty,_Ty>::pair<std::type_index&,std::unique_ptr<AbsolutEngine::Handle,std::default_delete<AbsolutEngine::Handle>>&,void>(_Other1,_Other2) noexcept(false)' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<AbsolutEngine::Handle,std::default_delete<AbsolutEngine::Handle>>,
-              _Other1=std::type_index &,
-              _Other2=std::unique_ptr<AbsolutEngine::Handle,std::default_delete<AbsolutEngine::Handle>> &
-          ]
-  src\core\engine\GameObject.cpp(14): note: see reference to function template instantiation 'std::pair<const _Kty,_Ty>::pair<std::type_index&,std::unique_ptr<AbsolutEngine::Handle,std::default_delete<AbsolutEngine::Handle>>&,void>(_Other1,_Other2) noexcept(false)' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<AbsolutEngine::Handle,std::default_delete<AbsolutEngine::Handle>>,
-              _Other1=std::type_index &,
-              _Other2=std::unique_ptr<AbsolutEngine::Handle,std::default_delete<AbsolutEngine::Handle>> &
-          ]
+﻿SOIL.lib(SOIL.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+Component.obj : error LNK2001: unresolved external symbol "public: __thiscall AbsolutEngine::Handle::~Handle(void)" (??1Handle@AbsolutEngine@@QAE@XZ)
+C:\Users\Tomas\Development\AbsolutEngine\Release\MasterThesis.exe : fatal error LNK1120: 1 unresolved externals

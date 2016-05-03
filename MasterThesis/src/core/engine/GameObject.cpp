@@ -11,7 +11,7 @@ namespace AbsolutEngine {
 	}
 
 	void GameObject::addComponent(std::type_index systemType, std::unique_ptr<Handle> handle) {
-		m_componentHandles.insert({systemType, handle});
+		m_componentHandles.insert({systemType, std::unique_ptr<Handle>(new Handle(*handle))});
 	}
 
 	bool GameObject::hasComponent(std::type_index systemType) {
