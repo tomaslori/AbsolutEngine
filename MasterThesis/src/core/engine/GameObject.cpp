@@ -21,7 +21,7 @@ namespace AbsolutEngine {
 	std::unique_ptr<Handle> GameObject::getComponent(std::type_index systemType) {
 		auto it = m_componentHandles.find(systemType);
 		if (it != m_componentHandles.end())
-			return std::make_unique<Handle>(it->second);
+			return std::unique_ptr<Handle>(new Handle(*(it->second)));
 		return nullptr;
 	}
 

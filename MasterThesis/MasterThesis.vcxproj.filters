@@ -25,6 +25,9 @@
     <Filter Include="Source Files\core\application">
       <UniqueIdentifier>{febd494f-2904-48ca-bc13-4946d59a9ddb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\core\engine">
+      <UniqueIdentifier>{0fdb2823-acab-48d5-bfb1-ff6ecefb655a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -39,6 +42,15 @@
     <ClCompile Include="src\utils\Singleton.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\engine\Component.cpp">
+      <Filter>Source Files\core\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\engine\GameObject.cpp">
+      <Filter>Source Files\core\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\engine\System.cpp">
+      <Filter>Source Files\core\engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Shader.h">
@@ -52,6 +64,15 @@
     </ClInclude>
     <ClInclude Include="src\utils\sharedptr.h">
       <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\engine\Component.h">
+      <Filter>Source Files\core\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\engine\GameObject.h">
+      <Filter>Source Files\core\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\engine\System.h">
+      <Filter>Source Files\core\engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

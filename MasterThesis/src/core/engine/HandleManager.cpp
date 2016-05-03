@@ -19,7 +19,7 @@ namespace AbsolutEngine {
 		return std::make_unique<Handle>(m_last, handleEntry.version, this);
 	}
 
-	void HandleManager::dealloc(Handle *handle) {
+	void HandleManager::dealloc(std::unique_ptr<Handle> handle) {
 		HandleEntry handleEntry = m_handleEntries[handle->m_index];
 		if (handle->m_version == handleEntry.version) {
 			handleEntry.aliveHandlersCount = 0;
@@ -28,7 +28,7 @@ namespace AbsolutEngine {
 		}
 	}
 
-	bool HandleManager::isValid(Handle *handle) {
+	bool HandleManager::isValid(std::unique_ptr<Handle> handle) {
 		HandleEntry handleEntry = m_handleEntries[handle->m_index];
 		return (handle->m_version == handleEntry.version && handleEntry.aliveHandlersCount > 0);
 	}

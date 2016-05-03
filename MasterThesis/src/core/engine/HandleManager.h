@@ -26,8 +26,8 @@ namespace AbsolutEngine {
 	public:
 		HandleManager();
 		std::unique_ptr<Handle> alloc();
-		void dealloc(Handle *handle);
-		bool isValid(Handle *handle);
+		void dealloc(std::unique_ptr<Handle> handle);
+		bool isValid(std::unique_ptr<Handle> handle);
 
 	private:
 		std::vector<HandleEntry> m_handleEntries;
